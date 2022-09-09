@@ -1,0 +1,88 @@
+<!-- Students: Please use this week's project for Module 17: Final Project: Responsive Site. 
+     You will need to replace the contents of this file with your own work, 
+     and create any other files, if any, required for the assignment.
+     When you are done, be certain to submit the assignment in Canvas to be graded. -->
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Let's Talk About Grapes</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header>
+    <h1 id="top">Let's Talk About Grapes</h1>
+    <figure>
+    <img src="the_view.jpg" alt="The View" id="fly">
+    <figcaption class="ease">Nice view of the Napa Valley</figcaption>
+    </figure>
+    <figure>
+      <img id="black" onclick="" src="https://svgsilh.com/png/34298.png" alt="luar">
+      <figcaption class="ease"><a href="https://svgsilh.com/ms/image/34298.html" target="_blank">"luar"</a> is licensed under <a href="https://creativecommons.org/licenses/cc0/1.0/?ref=ccsearch&atype=html" target="_blank">CC0 1.0</a>.</figcaption>
+    </figure>
+    </header>
+    <div id="container">
+        <article id="left">
+          <h4>The Why</h4>
+          <p>I want to create a site to inform people about grape varietals that are not as well known. For this project, I choose six grape varietals that have great importance in the history of wine,  are grown in well-known wine regions and are varietals I enjoy personally.</p>
+          <p>Hopefully the viewer learns something new about wine and the growing regions.</p>
+      </article>
+        <article id="center">
+        <h4>Varietals</h4>
+        <nav>
+      <ul id="links">
+      <li class="bottom"><a href="albarino.html">Albariño</a></li>
+      <li class="bottom"><a href="cabernet_franc.html">Cabernet Franc</a></li>
+      <li  class="bottom"><a href="carmenere.html">Carménère</a></li>
+      <li  class="bottom"><a href="chenin_blanc.html">Chenin Blanc</a></li>
+      <li class="bottom"><a href="pinot_meunier.html">Pinot Meunier</a></li>
+      <li><a href="semillon.html" >Sémillon</a></li>
+      </ul>
+      </nav>
+        </article>
+      <article id="right">
+        <h4>The Who</h4>
+          <p>The creator of this site is Michael Bridgeman. I am a student at Santa Rosa Junior College. I am trying to earn a Web Full-Stack Developer AS. This site was created for the final project for CS 50A. I have worked in a wine tasting room environment for 13 years. Other than Albariño, I have not served these varietals. Hopefully, after visiting the site, you will try one of these varietals.</p>
+        </article>
+        </div>
+      <nav style="border-top: solid 5px var(--yellow); border-bottom: solid 5px var(--yellow);">
+      <ul id="container3">
+      <li><span onclick="">Jump to ...</span>
+        <ul>
+      <li><a href="#top">Top of the Page</a></li>
+      <li><a href="albarino.html">Albariño</a></li>
+      <li><a href="cabernet_franc.html">Cabernet Franc</a></li>
+      <li><a href="carmenere.html">Carménère</a></li>
+      <li><a href="chenin_blanc.html">Chenin Blanc</a></li>
+      <li><a href="pinot_meunier.html">Pinot Meunier</a></li>
+      <li><a href="semillon.html">Sémillon</a></li>
+        </ul>
+        </li>
+      </ul>
+    </nav>
+      <form action="https://formspree.io/f/xayapdrq" method="POST">
+     <fieldset>
+       <legend>Questionnaire</legend>
+     <p>
+      <label for="name">Name:</label>
+     <input type="text" id="name" name="name_1" placeholder="Enter Here">
+     </p>
+     <p>Have you tried or heard of any these varietals before reading this page?<br>
+     <input type="radio" id="before_yes" name="heard" value="yes"><label for="before_yes">Yes</label><br>
+     <input type="radio" id="before_no" name="heard" value="no"><label for="before_no">No</label></p>
+     <p>If yes, which varietal(s)?<br>
+     <input type="checkbox" id="albarino" name="try" value="check_a"><label for="albarino">Albariño</label><br>
+     <input type="checkbox" id="cabernet_franc" name="try" value="check_cf"><label for="cabernet_franc">Cabernet Franc</label><br>
+     <input type="checkbox" id="carmenere" name="try" value="check_car"><label for="carmenere">Carménère</label><br>
+     <input type="checkbox" id="chenin_blanc" name="try" value="check_cb"><label for="chenin_blanc">Chenin Blanc</label><br>
+    <input type="checkbox" id="pinot_meunier" name="try" value="check_pm"><label for="pinot_meunier">Pinot Meunier</label><br>
+    <input type="checkbox" id="semillon" name="try" value="check_sem"><label for="semillon">Sémillon</label><br></p>
+     <p><label for="favorite">What is your favorite varietal(s)?</label><br>
+     <textarea id="favorite" name="varietal" rows="5" cols="40"></textarea></p>
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+    </fieldset>
+    </form>
+  </body>
+</html>
